@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ePortfolio académico de Redes de Computación — Primer Corte">
+  <title>ePortfolio | Redes de Computación</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="progress-line" id="progressLine"></div>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="#inicio" class="brand">
+        <span class="brand-icon"><span></span><span></span><span></span></span>
+        <span class="brand-text">
+          <strong>NETWORK<span>LAB</span></strong>
+          <small>ePortfolio · Redes de Computación</small>
+        </span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button>
+      <nav id="mainNav">
+        <a href="#inicio">Inicio</a>
+        <a href="#semana1">Semana 01</a>
+        <a href="#semana2">Semana 02</a>
+        <a href="#semana3">Semana 03</a>
+        <a href="#semana4">Semana 04</a>
+        <a href="#evidencias">Evidencias</a>
+        <a href="#checklist">Checklist</a>
+      </nav>
+    </div>
+  </header>
+
+  
+  <aside class="week-dock" id="weekDock" aria-label="Navegación por semanas">
+    <div class="dock-label">ROADMAP</div>
+    <a href="#semana1" class="dock-week active" data-week="semana1">
+      <span class="dock-number">01</span><span><b>Semana 01</b><small>Diseño de red</small></span>
+    </a>
+    <a href="#semana2" class="dock-week" data-week="semana2">
+      <span class="dock-number">02</span><span><b>Semana 02</b><small>Simulación</small></span>
+    </a>
+    <a href="#semana3" class="dock-week" data-week="semana3">
+      <span class="dock-number">03</span><span><b>Semana 03</b><small>OSI & TCP/IP</small></span>
+    </a>
+    <a href="#semana4" class="dock-week" data-week="semana4">
+      <span class="dock-number">04</span><span><b>Semana 04</b><small>Protocolos & medios</small></span>
+    </a>
+    <div class="dock-progress"><span id="dockProgress"></span></div>
+  </aside>
+
+  <main id="inicio">
+    <section class="hero">
+      <div class="hero-grid"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy reveal">
+          <div class="status-pill"><i></i> PRIMER CORTE · 4 SEMANAS</div>
+          <p class="mono-label">SYSTEMS ENGINEERING / NETWORKS</p>
+          <h1>Del concepto<br>al <span>ecosistema</span><br>de red.</h1>
+          <p class="hero-lead">
+            Un recorrido de aprendizaje donde analizamos problemas, experimentamos,
+            diseñamos soluciones y reflexionamos sobre la tecnología desde la perspectiva
+            de un futuro ingeniero de sistemas.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#semana1">Explorar portafolio <span>→</span></a>
+            <a class="btn ghost" href="#evidencias">Ver evidencias</a>
+          </div>
+        </div>
+
+        <div class="hero-panel reveal">
+          <div class="panel-top"><span>PORTFOLIO_STATUS</span><b>01 / 04</b></div>
+          <div class="network-map">
+            <div class="node n1">USER</div>
+            <div class="node n2">SW</div>
+            <div class="node n3">ROUTER</div>
+            <div class="node n4">SERVER</div>
+            <div class="node n5">CLOUD</div>
+            <svg viewBox="0 0 420 300" preserveAspectRatio="none">
+              <path d="M58 78 C120 115 145 155 205 150 S290 105 355 83" />
+              <path d="M58 78 C130 60 160 65 205 150 S295 220 355 83" />
+              <path d="M205 150 L205 235 L110 250" />
+              <path d="M205 150 L310 245" />
+            </svg>
+          </div>
+          <div class="panel-bottom">
+            <span><b>4</b> semanas</span>
+            <span><b>8</b> premisas</span>
+            <span><b>3</b> integrantes</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll">SCROLL TO EXPLORE <span>↓</span></div>
+    </section>
+
+    <section class="identity section">
+      <div class="container identity-grid">
+        <div>
+          <span class="kicker">01 · IDENTIDAD ACADÉMICA</span>
+          <h2>Portafolio de Redes de Computación</h2>
+          <p>
+            Este ePortfolio reúne las experiencias, aprendizajes, evidencias y productos
+            desarrollados durante el primer corte del curso. El proceso se organiza en
+            cuatro semanas y busca evidenciar no solo conocimiento conceptual, sino la
+            capacidad de analizar necesidades, formular alternativas, justificar decisiones
+            y comunicar soluciones tecnológicas.
+          </p>
+        </div>
+        <div class="team-strip">
+          <div class="team-title">TEAM / 03</div>
+          <div class="person"><span>DC</span><div><strong>David Felipe Corzo Torres</strong><small>Integrante</small></div></div>
+          <div class="person"><span>DT</span><div><strong>Duván Felipe Trujillo Llanos</strong><small>Integrante</small></div></div>
+          <div class="person"><span>JC</span><div><strong>Juan Pablo Chaparro Gutierrez</strong><small>Integrante</small></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="roadmap section soft">
+      <div class="container">
+        <div class="section-head">
+          <div><span class="kicker">02 · ROADMAP</span><h2>Cuatro semanas. Un proceso.</h2></div>
+          <p>Selecciona una semana para ir directamente a su contenido.</p>
+        </div>
+        <div class="roadmap-grid">
+          <a href="#semana1" class="week-card active" data-week-card="semana1"><span>01</span><strong>Diseño de red</strong><small>Nuevo Horizonte · Premisas 1–2</small><em>Explorar →</em></a>
+          <a href="#semana2" class="week-card" data-week-card="semana2"><span>02</span><strong>Simulación & calidad</strong><small>Packet Tracer · Premisas 3–4</small><em>Explorar →</em></a>
+          <a href="#semana3" class="week-card" data-week-card="semana3"><span>03</span><strong>OSI & TCP/IP</strong><small>Viaje del dato · Premisas 5–6</small><em>Explorar →</em></a>
+          <a href="#semana4" class="week-card" data-week-card="semana4"><span>04</span><strong>Protocolos & medios</strong><small>Infraestructura · Premisas 7–8</small><em>Explorar →</em></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- WEEK 1 -->
+    <section class="week-section" id="semana1">
+      <div class="week-ribbon"><span>WEEK 1</span><b>FUNDAMENTOS · DISEÑO</b><i></i><em>01 / 04</em></div>
+      <div class="container">
+        <div class="week-header reveal">
+          <div class="week-index">01</div>
+          <div>
+            <span class="kicker">SEMANA 01 · ENTRY 1 · WEEK 1 / SESSION 2</span>
+            <h2>Diseñar antes de conectar</h2>
+            <p>De la identificación del problema a una propuesta de red para una institución educativa.</p>
+          </div>
+          <div class="week-tag"><span>PREMISAS 01 · 02</span><small>25% DEL CORTE</small></div>
+        </div>
+
+        <div class="premise-grid">
+          <article class="premise"><span>PREMISA 01</span><h3>“Una red no es solo conectar dispositivos.”</h3><p>El diseño debe responder a necesidades reales de conectividad, seguridad, rendimiento, disponibilidad y crecimiento.</p></article>
+          <article class="premise"><span>PREMISA 02</span><h3>“Internet: ¿una solución tecnológica que transformó la sociedad?”</h3><p>Analizamos la evolución de Internet y sus efectos sobre el estudio, el trabajo, la comunicación y las relaciones.</p></article>
+        </div>
+
+        <div class="content-grid">
+          <article class="tech-card wide">
+            <div class="card-label">01.1 · CASO DE ESTUDIO</div>
+            <h3>Institución Educativa Nuevo Horizonte</h3>
+            <p>
+              La institución cuenta aproximadamente con <strong>800 estudiantes, 60 docentes y 30 funcionarios administrativos</strong>.
+              Se distribuye en tres bloques: <strong>A</strong> (aulas y salas de profesores),
+              <strong>B</strong> (laboratorios de informática y biblioteca) y <strong>C</strong>
+              (oficinas administrativas, rectoría y coordinación).
+            </p>
+            <div class="stat-row">
+              <div><b>800</b><span>Estudiantes</span></div>
+              <div><b>60</b><span>Docentes</span></div>
+              <div><b>30</b><span>Administrativos</span></div>
+              <div><b>3</b><span>Bloques</span></div>
+            </div>
+          </article>
+
+          <article class="tech-card">
+            <div class="card-label">01.2 · DIAGNÓSTICO</div>
+            <h3>Problemas identificados</h3>
+            <ul class="clean-list">
+              <li>Zonas con dificultades de conexión a Internet.</li>
+              <li>Congestión en laboratorios con múltiples equipos.</li>
+              <li>Necesidad de compartir información de forma segura.</li>
+              <li>Biblioteca dependiente de plataformas educativas.</li>
+              <li>Implementación futura de cámaras e IoT.</li>
+              <li>Crecimiento previsto de estudiantes y dispositivos.</li>
+              <li>Necesidad de seguridad y segmentación.</li>
+            </ul>
+          </article>
+
+          <article class="tech-card">
+            <div class="card-label">01.3 · CLASIFICACIÓN</div>
+            <h3>LAN · MAN · WAN</h3>
+            <div class="stack">
+              <div><b>LAN</b><span>Cada bloque opera dentro de un área local. La interconexión del campus se plantea como infraestructura LAN de campus.</span></div>
+              <div><b>MAN</b><span>Tendría sentido para ubicaciones dentro de una misma zona metropolitana que excedan el alcance local.</span></div>
+              <div><b>WAN</b><span>Sería necesaria para comunicar una sede con otra ciudad.</span></div>
+            </div>
+          </article>
+
+          <article class="tech-card wide">
+            <div class="card-label">01.4 · TOPOLOGÍA & RELACIÓN FUNCIONAL</div>
+            <h3>Arquitectura jerárquica con topología estrella en acceso</h3>
+            <p>
+              Para los laboratorios proponemos una <strong>topología estrella</strong>, donde los equipos se conectan
+              a un switch central. Facilita la administración y permite aislar fallas de cables o equipos.
+              Su dependencia principal es el dispositivo central; por ello, en la infraestructura general se debe
+              evitar un único punto crítico y contemplar redundancia cuando sea necesario.
+            </p>
+            <p>
+              Una arquitectura jerárquica puede combinar acceso, distribución y núcleo. Los equipos de usuarios,
+              impresoras, cámaras y teléfonos IP funcionan principalmente como clientes; los servicios que requieren
+              centralización pueden alojarse en servidores.
+            </p>
+            <div class="architecture">
+              <div class="arch-node"><span>☁</span><b>Internet</b></div>
+              <div class="arch-line"></div>
+              <div class="arch-node core"><span>◈</span><b>Router / L3</b></div>
+              <div class="arch-line"></div>
+              <div class="arch-branches">
+                <div><span>SW</span><b>Bloque A</b><small>Aulas</small></div>
+                <div><span>SW</span><b>Bloque B</b><small>Labs / Biblioteca</small></div>
+                <div><span>SW</span><b>Bloque C</b><small>Administración</small></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="tech-card">
+            <div class="card-label">01.5 · MEDIOS</div>
+            <h3>Cobre · Fibra · Wi-Fi</h3>
+            <div class="media-bars">
+              <div><b>Cobre Ethernet</b><span>Equipos finales, impresoras y teléfonos IP cercanos a switches.</span></div>
+              <div><b>Fibra óptica</b><span>Enlaces entre bloques por capacidad, distancia y resistencia a interferencias electromagnéticas.</span></div>
+              <div><b>Wi-Fi</b><span>Movilidad de estudiantes, docentes, tabletas y portátiles.</span></div>
+            </div>
+          </article>
+
+          <article class="tech-card">
+            <div class="card-label">01.6 · SOLUCIÓN</div>
+            <h3>Segmentación y crecimiento</h3>
+            <p>
+              Switches administrables, router o equipo de capa 3, puntos de acceso, servidores y enlaces de fibra.
+              Las VLAN pueden separar administración, estudiantes, docentes, invitados, telefonía IP, cámaras/IoT y servidores.
+            </p>
+            <p>
+              La escalabilidad se garantiza reservando capacidad en switches, puntos de red, direccionamiento y enlaces.
+              La seguridad contempla autenticación, contraseñas robustas, control de acceso, actualización, redes inalámbricas
+              separadas y monitoreo.
+            </p>
+          </article>
+
+          <article class="tech-card wide">
+            <div class="card-label">01.7 · PRODUCTO MULTIMODAL</div>
+            <h3>Propuesta de Diseño de Red para Nuevo Horizonte</h3>
+            <p>El producto debe comunicar visualmente el diagnóstico, la clasificación, el diseño, la justificación y la proyección de crecimiento.</p>
+            <div class="diagram-placeholder">
+              <img src="imagenes/semana1-img1.jpg" alt="Referencia visual para diagrama de red">
+            </div>
+          </article>
+
+          <article class="tech-card">
+            <div class="card-label">01.8 · APRENDIZAJE</div>
+            <h3>Lo que aprendimos</h3>
+            <p>
+              Diseñar una red implica analizar necesidades antes de seleccionar dispositivos. Comprendimos la diferencia
+              entre alcance, topología, relación funcional y medio de transmisión, y que una solución debe considerar
+              rendimiento, seguridad, disponibilidad y crecimiento.
+            </p>
+          </article>
+
+          <article class="tech-card">
+            <div class="card-label">01.9 · INTERNET & SOCIEDAD</div>
+            <h3>Oportunidades y riesgos</h3>
+            <p>
+              Internet amplió el acceso a información, comunicación, aprendizaje remoto y servicios digitales, pero
+              también plantea desafíos relacionados con dependencia tecnológica, seguridad, privacidad, desinformación
+              y brechas de acceso.
+            </p>
+          </article>
+        </div>
+
+        <div class="gallery-section">
+          <div class="gallery-title"><div><span class="kicker">EVIDENCIA VISUAL · SEMANA 01</span><h3>Galería de aprendizaje</h3></div><span>03 / 03</span></div>
+          <div class="gallery-grid">
+            <button class="gallery-item" data-title="Diagrama de red" data-img="imagenes/semana1-img1.jpg"><img src="imagenes/semana1-img1.jpg" alt="Diagrama de red"><span>01 · Diseño</span></button>
+            <button class="gallery-item" data-title="Apuntes de clasificación" data-img="imagenes/semana1-img2.jpg"><img src="imagenes/semana1-img2.jpg" alt="Espacio para apuntes"><span>02 · Apuntes</span></button>
+            <button class="gallery-item" data-title="Producto multimodal" data-img="imagenes/semana1-img3.jpg"><img src="imagenes/semana1-img3.jpg" alt="Producto multimodal"><span>03 · Producto</span></button>
+          </div>
+        </div>
+
+        <div class="english-block">
+          <div class="english-icon">EN</div>
+          <div><span class="kicker">WEEK 01 · ENGLISH REFLECTION</span><h3>From connectivity to network design</h3>
+          <p>
+            During this week, we learned that designing a network is not simply about connecting devices.
+            We analyzed the needs of an educational institution and considered LAN, MAN and WAN concepts,
+            topology, functional relationships and transmission media. We also reflected on how Internet
+            changed society and why a technical solution must consider security, performance, availability
+            and future growth.
+          </p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WEEK 2 -->
+    <section class="week-section alt" id="semana2">
+      <div class="week-ribbon"><span>WEEK 2</span><b>EXPERIMENTACIÓN · CALIDAD</b><i></i><em>01 / 04</em></div>
+      <div class="container">
+        <div class="week-header reveal">
+          <div class="week-index">02</div>
+          <div>
+            <span class="kicker">SEMANA 02 · ENTRY 2 · WEEK 2 / SESSION 4</span>
+            <h2>Probar, fallar y mejorar</h2>
+            <p>La simulación como espacio para experimentar antes de intervenir una infraestructura real.</p>
+          </div>
+          <div class="week-tag"><span>PREMISAS 03 · 04</span><small>50% DEL CORTE</small></div>
+        </div>
+
+        <div class="premise-grid">
+          <article class="premise"><span>PREMISA 03</span><h3>“¿Qué pasaría si pudieras equivocarte sin consecuencias?”</h3><p>Packet Tracer permite construir redes virtuales, configurar dispositivos, probar conexiones y analizar errores.</p></article>
+          <article class="premise"><span>PREMISA 04</span><h3>“Una red que funciona… ¿es necesariamente una buena red?”</h3><p>La conectividad debe evaluarse junto con rendimiento, seguridad, disponibilidad, escalabilidad, administración y experiencia del usuario.</p></article>
+        </div>
+
+        <div class="content-grid">
+          <article class="tech-card wide">
+            <div class="card-label">02.1 · EXPERIMENTACIÓN</div>
+            <h3>Cisco Packet Tracer como laboratorio virtual</h3>
+            <p>
+              Si tuviéramos que implementar una red real y solo pudiéramos realizar una configuración definitiva,
+              Packet Tracer permite reducir el riesgo mediante la construcción de escenarios, pruebas y alternativas
+              antes de intervenir la infraestructura.
+            </p>
+            <div class="process-line">
+              <div><b>01</b><span>Plantear problema</span></div><i></i><div><b>02</b><span>Construir</span></div><i></i><div><b>03</b><span>Experimentar</span></div><i></i><div><b>04</b><span>Diagnosticar</span></div><i></i><div><b>05</b><span>Corregir</span></div>
+            </div>
+          </article>
+
+          <article class="tech-card">
+            <div class="card-label">02.2 · PREGUNTAS DETONANTES</div>
+            <h3>Registro del experimento</h3>
+            <ol class="clean-list numbered">
+              <li>¿Qué problema queríamos solucionar?</li>
+              <li>¿Qué configuración realizamos?</li>
+              <li>¿Qué ocurrió cuando algo salió mal?</li>
+              <li>¿Cómo identificamos el error?</li>
+              <li>¿Qué cambiamos?</li>
+              <li>¿Qué aprendimos del error?</li>
+              <li>¿Qué diferencia existe entre simulación e infraestructura real?</li>
+            </ol>
+          </article>
+
+          <article class="tech-card">
+            <div class="card-label">02.3 · SIMULACIÓN VS. REALIDAD</div>
+            <h3>¿Por qué experimentar?</h3>
+            <div class="compare">
+              <div><strong>Simulación</strong><span>Permite probar alternativas, observar errores y corregir sin intervenir físicamente la infraestructura.</span></div>
+              <div><strong>Infraestructura real</strong><span>Una configuración incorrecta puede afectar disponibilidad, usuarios, equipos y servicios.</span></div>
+            </div>
+          </article>
+
+          <article class="tech-card wide">
+            <div class="card-label">02.4 · PREMISA 04</div>
+            <h3>Una red que funciona… ¿es necesariamente una buena red?</h3>
+            <p>
+              Una red puede permitir acceso a Internet y aun así presentar problemas de velocidad, seguridad,
+              disponibilidad o administración. Desde el rol de futuro ingeniero de sistemas, evaluamos la calidad
+              de una solución mediante siete dimensiones.
+            </p>
+            <div class="criteria-grid">
+              <div><b>01</b><strong>Conectividad</strong><span>Comunicación entre dispositivos y servicios.</span></div>
+              <div><b>02</b><strong>Rendimiento</strong><span>Respuesta adecuada a la demanda.</span></div>
+              <div><b>03</b><strong>Seguridad</strong><span>Protección y control de acceso.</span></div>
+              <div><b>04</b><strong>Disponibilidad</strong><span>Servicios accesibles cuando se necesitan.</span></div>
+              <div><b>05</b><strong>Escalabilidad</strong><span>Capacidad de crecimiento.</span></div>
+              <div><b>06</b><strong>Administración</strong><span>Monitoreo y mantenimiento.</span></div>
+              <div><b>07</b><strong>Experiencia</strong><span>Uso estable para el usuario.</span></div>
+            </div>
+          </article>
+
+          <article class="tech-card">
+            <div class="card-label">02.5 · EVIDENCIA</div>
+            <h3>Packet Tracer</h3>
+            <div class="diagram-placeholder compact"><img src="imagenes/semana2-img1.jpg" alt="Evidencia Packet Tracer"><div><span>CAPTURA REAL</span>
+          </article>
+
+          <article class="tech-card">
+            <div class="card-label">02.6 · REFLEXIÓN IA</div>
+            <h3>IA como herramienta de apoyo</h3>
+            <p>
+              La inteligencia artificial puede apoyar la organización de ideas, la revisión de claridad y la
+              estructuración de un producto académico. Las decisiones técnicas y la validación del contenido
+              corresponden al equipo.
+            </p>
+            <p class="note"><strong>Declaración de uso:</strong> La IA se utilizó como apoyo para estructurar ideas,
+              revisar la claridad de la explicación y orientar la presentación del contenido. La selección,
+              comprensión y validación de las ideas corresponden al equipo.</p>
+          </article>
+        </div>
+
+        <div class="gallery-section">
+          <div class="gallery-title"><div><span class="kicker">EVIDENCIA VISUAL · SEMANA 02</span><h3>Galería de aprendizaje</h3></div><span>03 / 03</span></div>
+          <div class="gallery-grid">
+            <button class="gallery-item" data-title="Packet Tracer" data-img="imagenes/semana2-img1.jpg"><img src="imagenes/semana2-img1.jpg" alt="Packet Tracer"><span>01 · Simulación</span></button>
+            <button class="gallery-item" data-title="Configuración y errores" data-img="imagenes/semana2-img2.jpg"><img src="imagenes/semana2-img2.jpg" alt="Configuración"><span>02 · Evidencia</span></button>
+            <button class="gallery-item" data-title="Análisis de calidad" data-img="imagenes/semana2-img3.jpg"><img src="imagenes/semana2-img3.jpg" alt="Análisis de calidad"><span>03 · Reflexión</span></button>
+          </div>
+        </div>
+
+        <div class="english-block">
+          <div class="english-icon">EN</div>
+          <div><span class="kicker">WEEK 02 · ENGLISH REFLECTION</span><h3>Simulation as an engineering laboratory</h3>
+          <p>
+            This week showed us the value of testing before implementing. With Packet Tracer, we can build a virtual
+            network, make mistakes, identify problems and compare solutions without affecting real users. We also
+            learned that a network is not truly successful just because it connects devices: performance, security,
+            availability, scalability, administration and user experience are also essential.
+          </p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WEEK 3 -->
+    <section class="week-section" id="semana3">
+      <div class="week-ribbon"><span>WEEK 3</span><b>MODELOS · COMUNICACIÓN</b><i></i><em>01 / 04</em></div>
+      <div class="container">
+        <div class="week-header reveal">
+          <div class="week-index">03</div>
+          <div>
+            <span class="kicker">SEMANA 03 · ENTRY 3 · WEEK 3 / SESSION 6</span>
+            <h2>El viaje invisible de un dato</h2>
+            <p>Comprender la comunicación mediante las capas del modelo OSI y su relación con TCP/IP.</p>
+          </div>
+          <div class="week-tag"><span>PREMISAS 05 · 06</span><small>75% DEL CORTE</small></div>
+        </div>
+
+        <div class="premise-grid">
+          <article class="premise"><span>PREMISA 05</span><h3>“El viaje invisible de un dato”</h3><p>Reconstruimos el recorrido de la información desde una acción del usuario hasta la respuesta.</p></article>
+          <article class="premise"><span>PREMISA 06</span><h3>“Si Internet fuera una ciudad, ¿cómo funcionaría?”</h3><p>Utilizamos una analogía cotidiana para explicar OSI y TCP/IP sin perder rigor técnico.</p></article>
+        </div>
+
+        <div class="content-grid">
+          <article class="tech-card wide">
+            <div class="card-label">03.1 · SERVICIO DIGITAL</div>
+            <h3>Del “Enviar” a la respuesta</h3>
+            <p>
+              Un mensaje, una videollamada, un video o una actividad en un aula virtual parece una acción sencilla,
+              pero detrás existe una interacción entre capas y protocolos. Seleccionamos un servicio digital frecuente
+              y reconstruimos su recorrido.
+            </p>
+            <div class="service-flow"><span>USUARIO</span><b>→</b><span>APLICACIÓN</span><b>→</b><span>RED</span><b>→</b><span>MEDIO</span><b>→</b><span>SERVIDOR</span></div>
+          </article>
+
+          <article class="tech-card">
+            <div class="card-label">03.2 · MODELO OSI</div>
+            <h3>Las siete capas</h3>
+            <div class="osi-list">
+              <div><b>7</b><strong>Aplicación</strong><span>Servicios y aplicaciones.</span></div>
+              <div><b>6</b><strong>Presentación</strong><span>Representación y formato.</span></div>
+              <div><b>5</b><strong>Sesión</strong><span>Gestión de sesiones.</span></div>
+              <div><b>4</b><strong>Transporte</strong><span>Comunicación extremo a extremo.</span></div>
+              <div><b>3</b><strong>Red</strong><span>Direccionamiento y rutas.</span></div>
+              <div><b>2</b><strong>Enlace</strong><span>Tramas y enlace.</span></div>
+              <div><b>1</b><strong>Física</strong><span>Bits y medio de transmisión.</span></div>
+            </div>
+          </article>
+
+          <article class="tech-card">
+            <div class="card-label">03.3 · ANÁLISIS</div>
+            <h3>¿Qué pasa si falla una capa?</h3>
+            <p>
+              El análisis no debe limitarse a definir las capas. Debe relacionarlas con el recorrido real del dato
+              y explicar qué efecto tendría la pérdida de una función.
+            </p>
+            <div class="fault-box"><span>⚠</span><div><b>Ejemplo</b><small>Si la capa física falla, los bits no pueden transportarse por el medio y la comunicación se interrumpe.</small></div></div>
+          </article>
+
+          <article class="tech-card wide">
+            <div class="card-label">03.4 · ANALOGÍA</div>
+            <h3>Internet como una ciudad</h3>
+            <p>
+              Una ciudad permite representar de forma cotidiana cómo diferentes elementos coordinan el movimiento
+              de información. Las direcciones pueden representar direccionamiento; las vías, los medios; las reglas
+              de tránsito, los protocolos; y los servicios, las aplicaciones. La analogía debe regresar finalmente
+              a los conceptos técnicos reales de OSI y TCP/IP.
+            </p>
+            <div class="city-map">
+              <div class="city-node"><b>APLICACIÓN</b><span>Servicios</span></div>
+              <div class="city-node"><b>TRANSPORTE</b><span>Entrega</span></div>
+              <div class="city-node"><b>RED</b><span>Rutas</span></div>
+              <div class="city-node"><b>ENLACE</b><span>Calles locales</span></div>
+              <div class="city-node"><b>FÍSICA</b><span>Infraestructura</span></div>
+            </div>
+          </article>
+
+          <article class="tech-card">
+            <div class="card-label">03.5 · PRODUCTO</div>
+            <h3>Representación visual</h3>
+            <div class="diagram-placeholder compact"><img src="imagenes/semana3-img1.jpg" alt="Viaje del dato"><div><span>PRODUCTO MULTIMODAL</span></div></div>
+          </article>
+
+          <article class="tech-card">
+            <div class="card-label">03.6 · TCP/IP</div>
+            <h3>Conexión con el modelo real</h3>
+            <p>
+              La analogía debe cerrarse conectando nuevamente las ideas con los modelos técnicos. El objetivo es
+              comunicar una explicación comprensible sin perder precisión conceptual.
+            </p>
+          </article>
+        </div>
+
+        <div class="gallery-section">
+          <div class="gallery-title"><div><span class="kicker">EVIDENCIA VISUAL · SEMANA 03</span><h3>Galería de aprendizaje</h3></div><span>03 / 03</span></div>
+          <div class="gallery-grid">
+            <button class="gallery-item" data-title="Modelo OSI" data-img="imagenes/semana3-img1.jpg"><img src="imagenes/semana3-img1.jpg" alt="Modelo OSI"><span>01 · OSI</span></button>
+            <button class="gallery-item" data-title="Viaje del dato" data-img="imagenes/semana3-img2.jpg"><img src="imagenes/semana3-img2.jpg" alt="Viaje del dato"><span>02 · Recorrido</span></button>
+            <button class="gallery-item" data-title="Analogía de ciudad" data-img="imagenes/semana3-img3.jpg"><img src="imagenes/semana3-img3.jpg" alt="Analogía de ciudad"><span>03 · Analogía</span></button>
+          </div>
+        </div>
+
+        <div class="english-block">
+          <div class="english-icon">EN</div>
+          <div><span class="kicker">WEEK 03 · ENGLISH REFLECTION</span><h3>Understanding the invisible journey of data</h3>
+          <p>
+            This week, we explored how information travels through different layers of communication.
+            The OSI model helped us understand that a simple action such as sending a message depends on
+            several coordinated functions. We also used a city analogy to explain networking concepts,
+            while keeping the connection with real technical ideas and the TCP/IP model.
+          </p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WEEK 4 -->
+    <section class="week-section alt" id="semana4">
+      <div class="week-ribbon"><span>WEEK 4</span><b>INFRAESTRUCTURA · PROTOCOLOS</b><i></i><em>01 / 04</em></div>
+      <div class="container">
+        <div class="week-header reveal">
+          <div class="week-index">04</div>
+          <div>
+            <span class="kicker">SEMANA 04 · ENTRY 4 · WEEK 4 / SESSION 8</span>
+            <h2>Cuando la infraestructura deja de ser invisible</h2>
+            <p>Analizamos protocolos, dependencia tecnológica y medios físicos e inalámbricos.</p>
+          </div>
+          <div class="week-tag"><span>PREMISAS 07 · 08</span><small>100% DEL CORTE</small></div>
+        </div>
+
+        <div class="premise-grid">
+          <article class="premise"><span>PREMISA 07</span><h3>“24 horas sin Internet… ¿qué tan dependientes somos?”</h3><p>Analizamos una interrupción desde los niveles técnico, social y profesional.</p></article>
+          <article class="premise"><span>PREMISA 08</span><h3>“¿Por dónde viaja Internet?”</h3><p>Combinamos medios guiados y no guiados para diseñar infraestructura en un escenario real.</p></article>
+        </div>
+
+        <div class="content-grid">
+          <article class="tech-card wide">
+            <div class="card-label">04.1 · PROTOCOLO</div>
+            <h3>24 horas sin Internet</h3>
+            <p>
+              Imaginamos que un protocolo fundamental desaparece durante 24 horas. La guía propone seleccionar
+              DNS, HTTP/HTTPS, BGP, UDP, SMTP, DHCP u otro protocolo visto en clase.
+            </p>
+            <div class="protocol-grid"><span>DNS</span><span>HTTP/HTTPS</span><span>BGP</span><span>UDP</span><span>SMTP</span><span>DHCP</span></div>
+          </article>
+
+          <article class="tech-card">
+            <div class="card-label">04.2 · NIVEL TÉCNICO</div>
+            <h3>¿Qué se afecta?</h3>
+            <p>Identificar componentes y servicios afectados por el protocolo seleccionado y describir cómo se manifestaría la interrupción.</p>
+          </article>
+
+          <article class="tech-card">
+            <div class="card-label">04.3 · NIVEL SOCIAL</div>
+            <h3>¿Qué cambia?</h3>
+            <p>Analizar actividades cotidianas, educativas, empresariales o gubernamentales que se alterarían.</p>
+          </article>
+
+          <article class="tech-card">
+            <div class="card-label">04.4 · NIVEL PROFESIONAL</div>
+            <h3>Rol del ingeniero</h3>
+            <p>Diagnosticar, aislar el problema, evaluar alternativas, responder de forma controlada y recuperar el servicio.</p>
+          </article>
+
+          <article class="tech-card wide">
+            <div class="card-label">04.5 · ESCENARIO</div>
+            <h3>¿Por dónde viaja Internet? · Campus universitario inteligente</h3>
+            <p>
+              Seleccionamos un campus universitario inteligente como escenario para combinar medios guiados y no guiados.
+              La infraestructura debe considerar capacidad, estabilidad, distancia, interferencias, movilidad, costo y disponibilidad.
+            </p>
+            <div class="transmission">
+              <div class="transmission-col"><span>MEDIOS GUIADOS</span><b>Cobre</b><b>Fibra óptica</b><small>Conducción física de la señal.</small></div>
+              <div class="transmission-col"><span>MEDIOS NO GUIADOS</span><b>Wi-Fi</b><b>Radiofrecuencia</b><b>Microondas</b><b>Enlaces inalámbricos</b><small>Transmisión por el espacio.</small></div>
+            </div>
+          </article>
+
+          <article class="tech-card">
+            <div class="card-label">04.6 · FACTORES</div>
+            <h3>Decisiones de infraestructura</h3>
+            <ul class="clean-list">
+              <li>Medio principal y medio de respaldo.</li>
+              <li>Factores ambientales.</li>
+              <li>Distancia y pérdida de señal.</li>
+              <li>Interferencias.</li>
+              <li>Estabilidad y costo.</li>
+              <li>Movilidad.</li>
+              <li>Errores físicos y disponibilidad.</li>
+            </ul>
+          </article>
+
+          <article class="tech-card">
+            <div class="card-label">04.7 · PRODUCTO</div>
+            <h3>Diseño de medios</h3>
+            <div class="diagram-placeholder compact"><img src="imagenes/semana4-img1.jpg" alt="Medios de transmisión"><div><span>DIAGRAMA</span>
+          </article>
+
+          <article class="tech-card wide">
+            <div class="card-label">04.8 · CIERRE DEL CORTE</div>
+            <h3>De la red invisible a la responsabilidad profesional</h3>
+            <p>
+              El análisis de protocolos y medios nos permite comprender que la experiencia del usuario depende
+              de una infraestructura técnica que debe ser diseñada, protegida, monitoreada y preparada para fallas.
+              El ingeniero de sistemas no solo conecta equipos: debe anticipar riesgos, justificar decisiones y
+              garantizar que la solución responda al contexto.
+            </p>
+          </article>
+        </div>
+
+        <div class="gallery-section">
+          <div class="gallery-title"><div><span class="kicker">EVIDENCIA VISUAL · SEMANA 04</span><h3>Galería de aprendizaje</h3></div><span>03 / 03</span></div>
+          <div class="gallery-grid">
+            <button class="gallery-item" data-title="Análisis de protocolo" data-img="imagenes/semana4-img1.jpg"><img src="imagenes/semana4-img1.jpg" alt="Análisis de protocolo"><span>01 · Protocolo</span></button>
+            <button class="gallery-item" data-title="Medios guiados y no guiados" data-img="imagenes/semana4-img2.jpg"><img src="imagenes/semana4-img2.jpg" alt="Medios de transmisión"><span>02 · Medios</span></button>
+            <button class="gallery-item" data-title="Producto de infraestructura" data-img="imagenes/semana4-img3.jpg"><img src="imagenes/semana4-img3.jpg" alt="Producto de infraestructura"><span>03 · Producto</span></button>
+          </div>
+        </div>
+
+        <div class="english-block">
+          <div class="english-icon">EN</div>
+          <div><span class="kicker">WEEK 04 · ENGLISH REFLECTION</span><h3>Infrastructure, protocols and professional responsibility</h3>
+          <p>
+            During the fourth week, we analyzed what could happen if a fundamental Internet protocol disappeared
+            and why society depends on network services. We also studied guided and wireless transmission media
+            in a smart campus scenario. This helped us understand that engineers must consider reliability,
+            distance, interference, cost, mobility and availability when designing communication infrastructure.
+          </p></div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="glance section">
+      <div class="container">
+        <div class="glance-head">
+          <span class="kicker">07 · VISIÓN GENERAL</span>
+          <h2>El corte, en una sola vista.</h2>
+        </div>
+        <div class="glance-grid">
+          <a href="#semana1"><b>01</b><strong>Diseño</strong><span>Necesidades · LAN/MAN/WAN · topología · medios</span></a>
+          <a href="#semana2"><b>02</b><strong>Experimentación</strong><span>Packet Tracer · errores · calidad de red</span></a>
+          <a href="#semana3"><b>03</b><strong>Comunicación</strong><span>OSI · TCP/IP · recorrido del dato</span></a>
+          <a href="#semana4"><b>04</b><strong>Infraestructura</strong><span>Protocolos · medios · disponibilidad</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section evidence-section" id="evidencias">
+      <div class="container">
+        <div class="section-head">
+          <div><span class="kicker">05 · PRUEBAS DEL APRENDIZAJE</span><h2>Centro de evidencias</h2></div>
+          <p>Las evidencias reales del equipo deben reemplazar los espacios de referencia.</p>
+        </div>
+        <div class="evidence-grid">
+          <article><span>01</span><h3>Apuntes</h3><p>Fotos de notas y actividades desarrolladas durante las sesiones.</p><img src="imagenes/evidencia-apuntes.jpg" alt="Espacio para apuntes"></article>
+          <article><span>02</span><h3>Packet Tracer</h3><p>Topologías, configuraciones, pruebas, errores y correcciones.</p><img src="imagenes/evidencia-packet.jpg" alt="Espacio para Packet Tracer"></article>
+          <article><span>03</span><h3>Diagramas</h3><p>Diseños de red, OSI, TCP/IP y medios de transmisión.</p><img src="imagenes/evidencia-diagramas.jpg" alt="Espacio para diagramas"></article>
+          <article><span>04</span><h3>Productos</h3><p>Videos, podcasts, infografías, presentaciones o productos multimodales.</p><img src="imagenes/evidencia-productos.jpg" alt="Espacio para productos"></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section checklist-section" id="checklist">
+      <div class="container checklist-wrap">
+        <div class="section-head">
+          <div><span class="kicker">06 · CONTROL DE ENTREGA</span><h2>Checklist del primer corte</h2></div>
+          <p>Marca cada criterio cuando esté realmente cumplido.</p>
+        </div>
+        <div class="checklist">
+          <label><input type="checkbox"><span>01</span><b>He tenido en cuenta la premisa de cada entrada.</b></label>
+          <label><input type="checkbox"><span>02</span><b>He registrado los aprendizajes que he logrado en este corte.</b></label>
+          <label><input type="checkbox"><span>03</span><b>He registrado las pruebas o evidencias que apoyan mi proceso de aprendizaje.</b></label>
+          <label><input type="checkbox"><span>04</span><b>Adjunté esta lista de control.</b></label>
+          <label><input type="checkbox"><span>05</span><b>Adjunté/envié/compartí/presenté mi portafolio antes del plazo establecido a las 11:59 pm.</b></label>
+        </div>
+        <div class="delivery-note"><strong>PORTFOLIO SUBMISSION #1</strong><span>18 de septiembre · 11:59 pm</span><small>Solo un integrante del grupo lo carga al Aula Virtual y en el comentario coloca los nombres de los integrantes.</small></div>
+      </div>
+    </section>
+
+    <section class="final-section">
+      <div class="container">
+        <span class="kicker">CIERRE</span>
+        <h2>Una red conecta dispositivos.<br><span>Un ingeniero conecta decisiones.</span></h2>
+        <p>
+          Este primer corte representa un recorrido desde los fundamentos hasta la reflexión profesional:
+          diseñar, experimentar, comprender protocolos y reconocer la infraestructura que hace posible la comunicación.
+        </p>
+        <div class="final-meta"><span>NETWORKLAB / 2026-2</span><span>INGENIERÍA DE SISTEMAS</span><span>4 WEEKS · 8 PREMISES</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div><strong>NETWORKLAB</strong><small>ePortfolio · Redes de Computación</small></div>
+      <div>David Felipe Corzo Torrez · Duván Felipe Trujillo Llanos · Juan Pablo Chaparro Gutierrez</div>
+      <div>Primer corte · 2026-2</div>
+    </div>
+  </footer>
+
+  <div class="modal" id="imageModal" aria-hidden="true">
+    <button class="modal-close" id="modalClose" aria-label="Cerrar">×</button>
+    <div class="modal-content"><img id="modalImage" src="" alt=""><p id="modalTitle"></p></div>
+  </div>
+
+  <button class="back-top" id="backTop" aria-label="Volver arriba">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
